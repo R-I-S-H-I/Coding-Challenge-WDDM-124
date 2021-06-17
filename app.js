@@ -21,7 +21,7 @@ const translate = () =>{
     const result = response.json();
 	console.log(result);
     result.then(data =>{
-        dest_text.innerHTML = data.data['translations'];
+        dest_text.innerHTML = data.data.translations[0][0].translatedText;
     })
 })
 .catch(err => {
