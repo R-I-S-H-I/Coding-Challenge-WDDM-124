@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Textok</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="text translation, translate">
+        <meta name="author" content="Chaudhary Rishabh">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <header class="page_header">
+            <h1 class="page_title">textok</h1>
+        </header>
+        <main class="main_cont">
+            <p class="description"><strong>Description: -</strong> Textok is a simple example of a text translation web app which uses the Google Translate API from <a href="https://rapidapi.com" target="_blank">Rapid API</a></p>
+            <form>
+                <div class="textarea_wrapper">
+                    <textarea name="initial_text" id="init_text" cols="30" rows="10" placeholder="Type text here"></textarea>
+                    <select name="text_value" id="options">
+                        <option value="en">English</option>
+                        <option value="fr">French</option>
+                        <option value="es">Spanish</option>
+                        <option value="de">German</option>
+                        <option value="ru">Russian</option>
+                    </select>
+                    <button type="button" class="translate_btn">Translate</button>
+                    <textarea name="translated_text" id="t_text" cols="30" rows="10" placeholder="Your result" readonly wrap="soft"></textarea><br>
+                </div>
+            </form>
+        </main>
+        <footer class="page_footer">
+            <h1 class="footer_title">textok</h1>
+            <h4 class="copyright">© Copyright. All rights reserved. Since 2021</h4>
+        </footer>
+        <script type="text/javascript" src="app.js"></script>
+    </body>
+</html>
